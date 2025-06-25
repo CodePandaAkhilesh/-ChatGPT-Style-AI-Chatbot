@@ -1,0 +1,272 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-color: #202123;
+}
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black; 
+  border-radius: 10px;
+  width: 20%;
+  margin: 5px;
+  background-color: rgb(12, 12, 12);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black; 
+  border-radius: 10px;
+  width: 80%;
+  margin: 5px;
+  background-color: rgb(28, 28, 28);
+  color: #fff;
+}
+
+.top {
+  display: flex;
+  flex-direction: row; 
+  gap: 10px; 
+  align-items: center;
+  border: 1px solid rgb(31,31,31);
+  border-radius: 5px;
+  margin: 5px 2px 2px 3px;
+  height: 10%;
+  padding: 0 10px; 
+}
+
+.logo {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.logo svg {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.top div span {
+  font-size: 1.2em; 
+  line-height: 1.2;
+}
+
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  height: 85%;
+}
+
+.middle-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 10px;
+}
+
+.profile {
+  border: 1px solid black; 
+  margin: 10px 30px 10px 30px;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 20px;
+  background-color: rgb(12, 12, 12);
+  border-radius: 20px;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.dot {
+  font-size: 25px;
+  padding-bottom: 15px; 
+}
+
+.message-area {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+.text-area {
+  border: 1px solid black; 
+  border-radius: 20px;
+  margin: 25px;
+  color: #fff;
+  height: 60%;
+  background-color: rgb(12, 12, 12);
+  padding: 30px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.type-message {
+  border: 1px solid black; 
+  border-radius: 20px;
+  margin: 25px;
+  height: 19%; 
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px 0px 30px;
+  min-height: 60px; 
+}
+
+.chat, .search, .library {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  height: 35px;
+  border-radius: 5px;
+  padding-left: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer; 
+}
+
+.chat:hover, .search:hover, .library:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 10px 0px 15px; 
+  border-radius: 8px;
+  color: white;
+  margin: 5px 2px 5px 3px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(31,31,31);
+  height: 9%; 
+  cursor: pointer;
+}
+
+.plan {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.plan .upgrade {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.plan .more {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 2px;
+}
+
+.bottom:hover {
+  background-color: #1e1e1e; 
+}
+
+.button {
+  border-radius: 50%; 
+  cursor: pointer;
+  background: none; 
+  border: none; 
+  padding: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; 
+  width: 40px; 
+  background-color: #323544; 
+}
+
+.button:hover {
+  background-color: #4a4d5e; 
+}
+
+.arrow {
+  height: 25px;
+  width: 20px;
+  color: white; 
+}
+
+.ask {
+  width: 90%;
+  height: 80%;
+  background-color: rgb(12, 12, 12);
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.ask2 {
+  width: 10%; 
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.user-message,
+.bot-message {
+  margin-bottom: 16px; 
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.copy {
+  cursor: pointer;
+}
+.user-message {
+  color: green;
+  font-weight: 500;
+  margin: 5px 0;
+  white-space: pre-wrap;
+}
+
+.bot-message {
+  color: rgb(131, 131, 241);
+  font-weight: 500;
+  margin: 5px 0;
+  white-space: pre-wrap;
+}
+
+.bot-message::before {
+  content: "🤖 NovaChat: ";
+  color: white;
+  font-weight: bold;
+}
+
+.user-message::before {
+  content: "👦 You: ";
+  color: white;
+  font-weight: bold;
+}
