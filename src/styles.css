@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: #202123;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -22,7 +23,7 @@ body {
 .left {
   display: flex;
   flex-direction: column;
-  border: 1px solid black; 
+  border: 1px solid black;
   border-radius: 10px;
   width: 20%;
   margin: 5px;
@@ -32,7 +33,7 @@ body {
 .right {
   display: flex;
   flex-direction: column;
-  border: 1px solid black; 
+  border: 1px solid black;
   border-radius: 10px;
   width: 80%;
   margin: 5px;
@@ -42,18 +43,33 @@ body {
 
 .top {
   display: flex;
-  flex-direction: row; 
-  gap: 10px; 
+  flex-direction: row;
+  gap: 10px;
   align-items: center;
-  border: 1px solid rgb(31,31,31);
+  border: 1px solid rgb(31, 31, 31);
   border-radius: 5px;
   margin: 5px 2px 2px 3px;
-  height: 10%;
-  padding: 0 10px; 
+  height: 12%;
+  padding: 20px 10px 15px 10px;
+}
+
+.top div span {
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+/* ✅ NEW: Styling for the paragraph inside top */
+.top p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.4;
+  max-width: 100%;
+  word-wrap: break-word;
 }
 
 .logo {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 15px;
@@ -64,12 +80,6 @@ body {
   height: 40px;
   display: block;
 }
-
-.top div span {
-  font-size: 1.2em; 
-  line-height: 1.2;
-}
-
 
 .middle {
   display: flex;
@@ -86,7 +96,7 @@ body {
 }
 
 .profile {
-  border: 1px solid black; 
+  border: 1px solid black;
   margin: 10px 30px 10px 30px;
   height: 10%;
   display: flex;
@@ -107,22 +117,22 @@ body {
 
 .dot {
   font-size: 25px;
-  padding-bottom: 15px; 
+  padding-bottom: 15px;
 }
 
 .message-area {
   height: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .text-area {
-  border: 1px solid black; 
+  border: 1px solid black;
   border-radius: 20px;
   margin: 25px;
   color: #fff;
-  height: 60%;
+  height: 64%;
   background-color: rgb(12, 12, 12);
   padding: 30px;
   overflow-y: auto;
@@ -130,17 +140,17 @@ body {
 }
 
 .type-message {
-  border: 1px solid black; 
+  border: 1px solid black;
   border-radius: 20px;
   margin: 25px;
-  height: 19%; 
+  height: 15%;
   background-color: rgb(12, 12, 12);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0px 30px 0px 30px;
-  min-height: 60px; 
+  min-height: 60px;
 }
 
 .chat, .search, .library {
@@ -152,7 +162,7 @@ body {
   border-radius: 5px;
   padding-left: 5px;
   transition: background-color 0.3s ease;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .chat:hover, .search:hover, .library:hover {
@@ -163,13 +173,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 17px 10px 0px 15px; 
+  padding: 17px 10px 0px 15px;
   border-radius: 8px;
   color: white;
-  margin: 5px 2px 5px 3px; 
+  margin: 5px 2px 5px 3px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgb(31,31,31);
-  height: 9%; 
+  border: 1px solid rgb(31, 31, 31);
+  height: 9%;
   cursor: pointer;
 }
 
@@ -190,32 +200,44 @@ body {
   margin-top: 2px;
 }
 
+.fuel {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 2px;
+}
+.ai {
+  font-size: 15px;
+  color: #aaa;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
 .bottom:hover {
-  background-color: #1e1e1e; 
+  background-color: #1e1e1e;
 }
 
 .button {
-  border-radius: 50%; 
+  border-radius: 50%;
   cursor: pointer;
-  background: none; 
-  border: none; 
-  padding: 0; 
+  background: none;
+  border: none;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px; 
-  width: 40px; 
-  background-color: #323544; 
+  height: 40px;
+  width: 40px;
+  background-color: #323544;
 }
 
 .button:hover {
-  background-color: #4a4d5e; 
+  background-color: #4a4d5e;
 }
 
 .arrow {
   height: 25px;
   width: 20px;
-  color: white; 
+  color: white;
 }
 
 .ask {
@@ -230,21 +252,22 @@ body {
 }
 
 .ask2 {
-  width: 10%; 
+  width: 10%;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
 
-.user-message,
-.bot-message {
-  margin-bottom: 16px; 
+.user-message, .bot-message {
+  margin-bottom: 16px;
   line-height: 1.5;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
+
 .copy {
   cursor: pointer;
 }
+
 .user-message {
   color: green;
   font-weight: 500;
@@ -270,3 +293,226 @@ body {
   color: white;
   font-weight: bold;
 }
+
+.chat-bubble {
+  display: flex;
+  margin-bottom: 10px;
+  max-width: 90%;
+}
+
+.chat-bubble.user {
+  justify-content: flex-end;
+}
+
+.chat-bubble.bot {
+  justify-content: flex-start;
+}
+
+.bubble {
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #343541;
+  color: #fff;
+  font-size: 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.chat-bubble.user .bubble {
+  background-color: #2f80ed;
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.chat-bubble.bot .bubble {
+  background-color: #444654;
+  border-bottom-left-radius: 0;
+}
+.chat-bubble {
+  display: flex;
+  margin-bottom: 10px;
+  max-width: 90%;
+}
+
+.chat-bubble.user {
+  justify-content: flex-end;
+}
+
+.chat-bubble.bot {
+  justify-content: flex-start;
+}
+
+.bubble {
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #343541;
+  color: #fff;
+  font-size: 15px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.chat-bubble.user .bubble {
+  background-color: #2f80ed;
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.chat-bubble.bot .bubble {
+  background-color: #444654;
+  border-bottom-left-radius: 0;
+}
+
+.chat-footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 12px 0;
+  color: #aaa;
+  background-color: #1c1c1c;
+  border-top: 1px solid #2a2a2a;
+}
+
+.chat-footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.chat-footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* 📱 Responsive for Phones */
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .main-container {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .left, .right {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    border-radius: 0;
+  }
+
+  .top {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+    height: auto;
+  }
+
+  .logo {
+    padding-bottom: 0;
+  }
+
+  .logo svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .top div span {
+    font-size: 1em;
+    word-break: break-word;
+    max-width: 100%;
+  }
+
+  .top p {
+    font-size: 13px;
+    text-align: left;
+    padding: 5px 0;
+    word-break: break-word;
+  }
+
+  .middle {
+    margin: 5px;
+    height: auto;
+  }
+
+  .text-area, .type-message {
+    margin: 10px;
+    padding: 15px;
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  .type-message {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    height: auto;
+  }
+
+  .ask {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    overflow-wrap: break-word;
+  }
+
+  .ask2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .profile {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px;
+    height: auto;
+  }
+
+  .chat, .search, .library {
+    flex-wrap: wrap;
+    word-break: break-word;
+  }
+
+  .user-message, .bot-message {
+    font-size: 14px;
+    word-break: break-word;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+}
+
+/* 💻 Responsive for Laptops (Medium Screens) */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .left {
+    width: 25%;
+  }
+
+  .right {
+    width: 75%;
+  }
+
+  .top {
+    gap: 8px;
+    padding: 0 8px;
+  }
+
+  .ask {
+    font-size: 15px;
+  }
+
+  .logo svg {
+    width: 35px;
+    height: 35px;
+  }
+}
+

@@ -44,8 +44,9 @@ function Sidebar() {
         </div>
         <div>
           <span>
-            NovaChat <br /> Bot
+            BrainFuel <br /> Bot
           </span>
+          <p className='fuel'>Fuels your mind before exams</p>
         </div>
       </div>
       <div className="middle">
